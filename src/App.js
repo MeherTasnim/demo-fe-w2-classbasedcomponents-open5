@@ -1,4 +1,5 @@
 import React from 'react';
+import { Photo } from './components/Photo';
 
 class App extends React.Component {
     constructor() {
@@ -19,6 +20,7 @@ class App extends React.Component {
             <div>
                 <h1>Hello! I'm in a class-based component now.</h1>
                 <p>{ this.state.quote }</p>
+                <Photo imgUrl={"https://picsum.photos/300"} />
             </div>
         )
     }
